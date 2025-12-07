@@ -1,0 +1,62 @@
+Upload deployment.zip
+    curl -F 'file=@deployment.zip' https://0x0.st
+    <generates link>
+
+Download deployment.zip
+    sudo curl -o deployment.zip https://0x0.st/8JEU.zip
+
+Unzip deployment.zip
+    sudo unzip deployment.zip -d .
+
+Untar swarm-artifacts/ycsb-0.12.0.tar.gz in the swarm-artifacts directory:
+    sudo tar -xf ycsb-0.12.0.tar.gz
+
+Rename swarm-artifacts/ycsb-0.12.0 to swarm-artifacts/YCSB:
+    sudo mv ycsb-0.12.0 YCSB
+
+Unzip swarm-artifacts/bin/bin.zip into the swarm-artifacts/bin directory:
+    sudo unzip -o \bin/bin.zip -d bin
+
+Run docker container with all necessary ports open:
+   sudo docker run -p 7000-7100:7000-7100 -p 11211:11211 -p 18515:18515 -p 9998:9998 -it dory:attempt1 bash
+
+Making ssh w1 work involved
+- Generating SSH-keys and copying over to remote side to bypass the need to give password (either ssh-copy-id or manually copy)
+- Adding entry in ssh config so no need to type 'ma2386@' in 'ma2386@compute23....'
+
+docker run --platform linux/amd64 -it swarm-kv:ssh-working bash
+
+Check terminals list:
+    tmux list-windows -t oops
+
+Inspect individual tmux:
+    tmux capture-pane -t oops:1 -p -S -100000 (by name or ID also possible)
+
+
+1 server
+1 client = 2 clients = 4 clients = 6 clients = 8 clients = 16 (50th percentile latency)
+
+Check NUMA / CPU Affinity
+numactl -m 1 -N 1 <command>
+libnuma (https://man7.org/linux/man-pages/man3/numa.3.html)
+./memc.sh
+
+docker run --platform linux/amd64 -it swarm-kv bash
+
+
+sudo apt install libboost-all-dev
+sudo apt-get install libzmq3-dev
+sudo apt-get install libgtest-dev
+
+cd .. && cmake .. && make -j && cd benchmark
+
+./bench_runner -r s -a 128.84.139.24 -t 8 -b micro
+./bench_runner -r s -a 128.84.139.24 -t 8 -b micro > log/micro.log
+
+./bench_runner -r s -a 128.84.139.24 -t 8 -c 8 -b smallbank
+./bench_runner -r s -a 128.84.139.24 -t 8 -c 8 -b smallbank > log/smallbank.log
+
+./bench_runner -r s -a 128.84.139.24 -t 8 -c 8 -b tpcc
+./bench_runner -r s -a 128.84.139.24 -t 8 -c 8 -b tpcc > log/tpcc.log
+
+
