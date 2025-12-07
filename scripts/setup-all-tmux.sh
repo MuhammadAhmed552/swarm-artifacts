@@ -11,6 +11,6 @@ for i in $(seq $FIRST_MACHINE $(($FIRST_MACHINE + $MACHINE_COUNT - 1))); do
         "tmux kill-session -t $TMUX_SESSION 2> /dev/null; \
          tmux new-session -d -s $TMUX_SESSION && \
          tmux set-option -g remain-on-exit on"
-    # echo "Setup tmux session $TMUX_SESSION for $MACHINE"
+    echo "Setup tmux session $TMUX_SESSION for $MACHINE"
 done
 echo " ✓"

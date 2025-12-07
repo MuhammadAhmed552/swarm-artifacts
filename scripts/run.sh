@@ -3,6 +3,7 @@
 set -u
 
 SCRIPT_DIR="$( realpath -sm "$( dirname "${BASH_SOURCE[0]}" )" )"
+echo "Script dir: $SCRIPT_DIR"
 source "$SCRIPT_DIR"/config.sh
 
 BINARY=$1
@@ -23,8 +24,10 @@ for retry in $(seq 1 15); do
   echo -n "Starting"
 
   "$SCRIPT_DIR"/remote-memc.sh $REGISTRY_MACHINE
+  
   sleep 0.1
 
+  echo "Starting server(s)"
   for s in $(seq 1 $NBSERVERS); do
     echo -n "."
     MACHINE=machine$(($FIRST_SERVER + ($s - 1) % $SERVER_MACHINES))
@@ -32,12 +35,25 @@ for retry in $(seq 1 15); do
     "$SCRIPT_DIR"/remote-invoker.sh $MACHINE "$FOLDER" server$s $CORE "$BIN_DIR/$BINARY" -i $s $ARGS
   done
 
+  echo "Starting client(s)"
+  CORE_COUNTER=1  # Initialize a core counter starting at 1 (NUMA Node 1 start)  
   for c in $(seq 1 $NBCLIENTS); do
     echo -n "."
     MACHINE=machine$(($FIRST_CLIENT + ($c - 1) % $CLIENT_MACHINES))
-    CORE=$(((($c - 1) / $CLIENT_MACHINES) * 2))
-    i=$((c + $NBSERVERS))
-    "$SCRIPT_DIR"/remote-invoker.sh $MACHINE "$FOLDER" client$c $CORE "$BIN_DIR/$BINARY" -i $i $ARGS
+    
+    CORE=$CORE_COUNTER
+    
+    # Check if the core is assigned correctly before echoing
+    if [ -z "$CORE" ]; then
+        echo -e "\nERROR: Core calculation failed for client $c."
+    else
+        echo -e "\nClient $c assigned to core $CORE on $MACHINE" 
+        i=$((c + $NBSERVERS))
+        "$SCRIPT_DIR"/remote-invoker.sh $MACHINE "$FOLDER" client$c $CORE "$BIN_DIR/$BINARY" -i $i $ARGS
+    fi
+    
+    # Increment core counter by 2 for the next isolated physical core
+    CORE_COUNTER=$((CORE_COUNTER + 2))
   done
   echo " ✓"
 

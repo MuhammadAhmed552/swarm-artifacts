@@ -34,7 +34,7 @@ for c in $(seq 1 $NBCLIENTS); do
   CORE=$(((($c - 1) / $CLIENT_MACHINES) * 2))
   i=$((c + $NBSERVERS))
   # "$SCRIPT_DIR"/remote-invoker.sh $MACHINE "$FOLDER" client$c $CORE "$BIN_DIR/$BINARY" -i $i $ARGS
-  echo "On $MACHINE: source \"$SCRIPT_DIR\"/config.sh; numactl -m 0 -N 0 -C $CORE gdb --args $BIN_DIR/$BINARY $ARGS -i $i"
+  echo "On $MACHINE: source \"$SCRIPT_DIR\"/config.sh; numactl -m 1 -N 1 -C $CORE gdb --args $BIN_DIR/$BINARY $ARGS -i $i"
 done
 # echo " ✓"
 echo "✓"

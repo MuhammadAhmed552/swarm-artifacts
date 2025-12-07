@@ -1,0 +1,97 @@
+mlx5_1 uverbs1 NodeType::CA TransportType::IB
+Selected port uses link layer: [Ethernet]
+GID retrieved: 33022:9472533462034480766
+Port LID: 0
+[SWARM-KV] Binded successfully (port_id, port_lid, port_gid) = (1, 0, 33022:9472533462034480766)
+[CB:info] PD 'primary' registered
+[CB:info] Buffer 'shared-buf' of size 1572800000 allocated
+[CB:info] Mr 'shared-mr' under PD 'primary' registered with buf 'shared-buf' (offset: 0, length: 1572800000) and rights 15
+[CB:info] Cq 'cq2' registered
+[CB:info] Cq 'cq3' registered
+[CB:info] Cq 'cq4' registered
+[CB:info] Cq 'cq5' registered
+[CB:info] Cq 'cq6' registered
+[CE:info] Publishing qp qp-1-for-2
+[CE:info] Publishing qp qp-1-for-3
+[CE:info] Publishing qp qp-1-for-4
+[CE:info] Publishing qp qp-1-for-5
+[CE:info] Publishing qp qp-1-for-6
+Calling connectAll()
+Got key qp-2-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133cd:5569a348b980:200:7b9a8
+Deserialized QP info: qpn=78797, lid=0, rkey=506280
+Initiating rc with rights 15 About to connect
+Connected to qp qp-2-for-1 with rights 15
+[CE:info] Connected to qp qp-2-for-1 with rights 15
+Got key qp-3-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133d2:55f4dbc3a980:200:7c7b6
+Deserialized QP info: qpn=78802, lid=0, rkey=509878
+Initiating rc with rights 15 About to connect
+Connected to qp qp-3-for-1 with rights 15
+[CE:info] Connected to qp qp-3-for-1 with rights 15
+Got key qp-4-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133d7:55ba70892980:200:7cdbc
+Deserialized QP info: qpn=78807, lid=0, rkey=511420
+Initiating rc with rights 15 About to connect
+Connected to qp qp-4-for-1 with rights 15
+[CE:info] Connected to qp qp-4-for-1 with rights 15
+Got key qp-5-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133dc:560fdf165980:200:79483
+Deserialized QP info: qpn=78812, lid=0, rkey=496771
+Initiating rc with rights 15 About to connect
+Connected to qp qp-5-for-1 with rights 15
+[CE:info] Connected to qp qp-5-for-1 with rights 15
+Got key qp-6-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133e1:562ff799c980:200:7a190
+Deserialized QP info: qpn=78817, lid=0, rkey=500112
+Initiating rc with rights 15 About to connect
+Connected to qp qp-6-for-1 with rights 15
+[CE:info] Connected to qp qp-6-for-1 with rights 15
+connectAll() successfull
+[CE:info] Unpublishing qp qp-1-for-2
+[CE:info] Unpublishing qp qp-1-for-3
+[CE:info] Unpublishing qp qp-1-for-4
+[CE:info] Unpublishing qp qp-1-for-5
+[CE:info] Unpublishing qp qp-1-for-6
+Selected port uses link layer: [Ethernet]
+GID retrieved: 33022:9472533462034480766
+Port LID: 0
+[CB:info] PD 'pd' registered
+[CB:info] Buffer 'buf' of size 18874368 allocated
+[CB:info] Mr 'mr' under PD 'pd' registered with buf 'buf' (offset: 0, length: 18874368) and rights 15
+[CB:info] Cq 'cq' registered
+[CE:info] Publishing qp default-race-qp-1-for-2
+[CE:info] Publishing qp default-race-qp-1-for-3
+[CE:info] Publishing qp default-race-qp-1-for-4
+[CE:info] Publishing qp default-race-qp-1-for-5
+[CE:info] Publishing qp default-race-qp-1-for-6
+[ServerIndex:info] Index connecting...
+Got key default-race-qp-2-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133e7:5569a3590200:6000:74231
+Deserialized QP info: qpn=78823, lid=0, rkey=475697
+Initiating rc with rights 15 About to connect
+Connected to qp default-race-qp-2-for-1 with rights 15
+[CE:info] Connected to qp default-race-qp-2-for-1 with rights 15
+Got key default-race-qp-3-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133e8:55f4dbd3f200:6000:73a29
+Deserialized QP info: qpn=78824, lid=0, rkey=473641
+Initiating rc with rights 15 About to connect
+Connected to qp default-race-qp-3-for-1 with rights 15
+[CE:info] Connected to qp default-race-qp-3-for-1 with rights 15
+Got key default-race-qp-4-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133e6:55ba70997200:6000:73423
+Deserialized QP info: qpn=78822, lid=0, rkey=472099
+Initiating rc with rights 15 About to connect
+Connected to qp default-race-qp-4-for-1 with rights 15
+[CE:info] Connected to qp default-race-qp-4-for-1 with rights 15
+Got key default-race-qp-5-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133ea:560fdf26a200:6000:73827
+Deserialized QP info: qpn=78826, lid=0, rkey=473127
+Initiating rc with rights 15 About to connect
+Connected to qp default-race-qp-5-for-1 with rights 15
+[CE:info] Connected to qp default-race-qp-5-for-1 with rights 15
+Got key default-race-qp-6-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133e9:562ff7aa1200:6000:7301f
+Deserialized QP info: qpn=78825, lid=0, rkey=471071
+Initiating rc with rights 15 About to connect
+Connected to qp default-race-qp-6-for-1 with rights 15
+[CE:info] Connected to qp default-race-qp-6-for-1 with rights 15
+[ServerIndex:info] Connected
+[ServerIndex:info] RDMA buffer: 140217002045504 to 140217020919872
+[CE:info] Unpublishing qp default-race-qp-1-for-2
+[CE:info] Unpublishing qp default-race-qp-1-for-3
+[CE:info] Unpublishing qp default-race-qp-1-for-4
+[CE:info] Unpublishing qp default-race-qp-1-for-5
+[CE:info] Unpublishing qp default-race-qp-1-for-6
+Closing server index connection.
+###DONE###

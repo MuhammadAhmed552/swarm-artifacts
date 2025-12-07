@@ -12,4 +12,4 @@ MACHINE=$(machine2ssh $M)
 
 ssh -o LogLevel=QUIET -t $MACHINE "$SCRIPT_DIR/invoker.sh $ARGS"
 
-# echo "Launched on $MACHINE: invoker.sh $ARGS"
+echo "Launched on $MACHINE: invoker.sh $ARGS"

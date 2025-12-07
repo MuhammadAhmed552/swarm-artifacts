@@ -9,31 +9,31 @@ TMUX_SESSION=oops
 
 FIRST_MACHINE=1
 FIRST_SERVER=$FIRST_MACHINE
-SERVER_MACHINES=4
+SERVER_MACHINES=1
 FIRST_CLIENT=$(($FIRST_MACHINE + $SERVER_MACHINES))
-CLIENT_MACHINES=4
+CLIENT_MACHINES=1
 MACHINE_COUNT=$(($SERVER_MACHINES + $CLIENT_MACHINES))
 REGISTRY_MACHINE=machine1
 
 # Set ssh names of the machines
-machine1=w7
-machine2=w8
-machine3=w6
-machine4=w5
-machine5=w1
-machine6=w2
-machine7=w3
-machine8=w4
+machine1=w1
+machine2=w2
+# machine3=w2
+# machine4=w5
+# machine5=w1
+# machine6=w2
+# machine7=w3
+# machine8=w4
 
 # Set fqdn names of the machines (use `hostname -f`)
-machine1hostname=swarm-${machine1}
-machine2hostname=swarm-${machine2}
-machine3hostname=swarm-${machine3}
-machine4hostname=swarm-${machine4}
-machine5hostname=swarm-${machine5}
-machine6hostname=swarm-${machine6}
-machine7hostname=swarm-${machine7}
-machine8hostname=swarm-${machine8}
+machine1hostname=compute23.fractus.cs.cornell.edu
+machine2hostname=compute28.fractus.cs.cornell.edu
+# machine3hostname=compute28.fractus.cs.cornell.edu
+# machine4hostname=swarm-${machine4}
+# machine5hostname=swarm-${machine5}
+# machine6hostname=swarm-${machine6}
+# machine7hostname=swarm-${machine7}
+# machine8hostname=swarm-${machine8}
 
 
 # Memcached does not run with root access

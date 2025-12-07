@@ -1,0 +1,37 @@
+mlx5_1 uverbs1 NodeType::CA TransportType::IB
+Selected port uses link layer: [Ethernet]
+GID retrieved: 33022:9472533462034480766
+Port LID: 0
+[SWARM-KV] Binded successfully (port_id, port_lid, port_gid) = (1, 0, 33022:9472533462034480766)
+[CB:info] PD 'primary' registered
+[CB:info] Buffer 'shared-buf' of size 342720000 allocated
+[CB:info] Mr 'shared-mr' under PD 'primary' registered with buf 'shared-buf' (offset: 0, length: 342720000) and rights 15
+[CB:info] Cq 'cq2' registered
+[CE:info] Publishing qp qp-1-for-2
+Calling connectAll()
+Got key qp-2-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133a5:55e6fda36480:180:7b9a8
+Deserialized QP info: qpn=78757, lid=0, rkey=506280
+Initiating rc with rights 15 About to connect
+Connected to qp qp-2-for-1 with rights 15
+[CE:info] Connected to qp qp-2-for-1 with rights 15
+connectAll() successfull
+[CE:info] Unpublishing qp qp-1-for-2
+Selected port uses link layer: [Ethernet]
+GID retrieved: 33022:9472533462034480766
+Port LID: 0
+[CB:info] PD 'pd' registered
+[CB:info] Buffer 'buf' of size 18874368 allocated
+[CB:info] Mr 'mr' under PD 'pd' registered with buf 'buf' (offset: 0, length: 18874368) and rights 15
+[CB:info] Cq 'cq' registered
+[CE:info] Publishing qp default-race-qp-1-for-2
+[ServerIndex:info] Index connecting...
+Got key default-race-qp-2-for-1 with ret_val = 0:80fe:7b7932feff90fe7e:133a6:55e6fda80040:6000:73423
+Deserialized QP info: qpn=78758, lid=0, rkey=472099
+Initiating rc with rights 15 About to connect
+Connected to qp default-race-qp-2-for-1 with rights 15
+[CE:info] Connected to qp default-race-qp-2-for-1 with rights 15
+[ServerIndex:info] Connected
+[ServerIndex:info] RDMA buffer: 140193602650176 to 140193621524544
+[CE:info] Unpublishing qp default-race-qp-1-for-2
+Closing server index connection.
+###DONE###

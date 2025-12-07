@@ -11,4 +11,4 @@ MACHINE=$(machine2ssh $M)
 
 ssh -o LogLevel=QUIET -t $MACHINE "$SCRIPT_DIR/memc.sh"
 
-# echo "Launched on $MACHINE: $SCRIPT_DIR/memc.sh"
+echo "Launched on $MACHINE: $SCRIPT_DIR/memc.sh"

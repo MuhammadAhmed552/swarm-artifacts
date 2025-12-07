@@ -1,0 +1,474 @@
+Workload: /home/ma2386/swarm-artifacts/workloads/oops-workloada
+Log entry size: 288
+KV entry size: 272
+mlx5_1 uverbs1 NodeType::CA TransportType::IB
+Selected port uses link layer: [Ethernet]
+GID retrieved: 33022:8897198609637899902
+Port LID: 0
+[SWARM-KV] Binded successfully (port_id, port_lid, port_gid) = (1, 0, 33022:8897198609637899902)
+[CB:info] PD 'primary' registered
+[CB:info] Buffer 'shared-buf' of size 640 allocated
+[CB:info] Mr 'shared-mr' under PD 'primary' registered with buf 'shared-buf' (offset: 0, length: 640) and rights 15
+[CB:info] Cq 'cq1' registered
+[CB:info] Cq 'cq3' registered
+[CB:info] Cq 'cq4' registered
+[CB:info] Cq 'cq5' registered
+[CB:info] Cq 'cq6' registered
+[CB:info] Cq 'cq7' registered
+[CB:info] Cq 'cq8' registered
+[CB:info] Cq 'cq9' registered
+[CB:info] Cq 'cq10' registered
+[CB:info] Cq 'cq11' registered
+[CB:info] Cq 'cq12' registered
+[CB:info] Cq 'cq13' registered
+[CB:info] Cq 'cq14' registered
+[CE:info] Publishing qp qp-2-for-1
+[CE:info] Publishing qp qp-2-for-3
+[CE:info] Publishing qp qp-2-for-4
+[CE:info] Publishing qp qp-2-for-5
+[CE:info] Publishing qp qp-2-for-6
+[CE:info] Publishing qp qp-2-for-7
+[CE:info] Publishing qp qp-2-for-8
+[CE:info] Publishing qp qp-2-for-9
+[CE:info] Publishing qp qp-2-for-10
+[CE:info] Publishing qp qp-2-for-11
+[CE:info] Publishing qp qp-2-for-12
+[CE:info] Publishing qp qp-2-for-13
+[CE:info] Publishing qp qp-2-for-14
+Calling connectAll()
+Got key qp-1-for-2 with ret_val = 0:80fe:837532feff90fe7e:c48:7feafe0bc040:ef9ec600:7ce00
+Deserialized QP info: qpn=3144, lid=0, rkey=511488
+Initiating rc with rights 15 About to connect
+Connected to qp qp-1-for-2 with rights 15
+[CE:info] Connected to qp qp-1-for-2 with rights 15
+Got key qp-3-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:1368b:5625932682c0:280:78a79
+Deserialized QP info: qpn=79499, lid=0, rkey=494201
+Initiating rc with rights 15 About to connect
+Connected to qp qp-3-for-2 with rights 15
+[CE:info] Connected to qp qp-3-for-2 with rights 15
+Got key qp-4-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:13698:55c50d06d2c0:280:79483
+Deserialized QP info: qpn=79512, lid=0, rkey=496771
+Initiating rc with rights 15 About to connect
+Connected to qp qp-4-for-2 with rights 15
+[CE:info] Connected to qp qp-4-for-2 with rights 15
+Got key qp-5-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:136a5:55c9ce7f12c0:280:7c7b6
+Deserialized QP info: qpn=79525, lid=0, rkey=509878
+Initiating rc with rights 15 About to connect
+Connected to qp qp-5-for-2 with rights 15
+[CE:info] Connected to qp qp-5-for-2 with rights 15
+Got key qp-6-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:136b2:55bbb508c2c0:280:78170
+Deserialized QP info: qpn=79538, lid=0, rkey=491888
+Initiating rc with rights 15 About to connect
+Connected to qp qp-6-for-2 with rights 15
+[CE:info] Connected to qp qp-6-for-2 with rights 15
+Got key qp-7-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:136bf:558ca2a832c0:280:7b9a8
+Deserialized QP info: qpn=79551, lid=0, rkey=506280
+Initiating rc with rights 15 About to connect
+Connected to qp qp-7-for-2 with rights 15
+[CE:info] Connected to qp qp-7-for-2 with rights 15
+Got key qp-8-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:136cc:55cd1385d2c0:280:77a69
+Deserialized QP info: qpn=79564, lid=0, rkey=490089
+Initiating rc with rights 15 About to connect
+Connected to qp qp-8-for-2 with rights 15
+[CE:info] Connected to qp qp-8-for-2 with rights 15
+Got key qp-9-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:136d9:556fc108e2c0:280:7b6a5
+Deserialized QP info: qpn=79577, lid=0, rkey=505509
+Initiating rc with rights 15 About to connect
+Connected to qp qp-9-for-2 with rights 15
+[CE:info] Connected to qp qp-9-for-2 with rights 15
+Got key qp-10-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:136e6:55f38a2f62c0:280:7cdbc
+Deserialized QP info: qpn=79590, lid=0, rkey=511420
+Initiating rc with rights 15 About to connect
+Connected to qp qp-10-for-2 with rights 15
+[CE:info] Connected to qp qp-10-for-2 with rights 15
+Got key qp-11-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:136f3:5632baf912c0:280:7a291
+Deserialized QP info: qpn=79603, lid=0, rkey=500369
+Initiating rc with rights 15 About to connect
+Connected to qp qp-11-for-2 with rights 15
+[CE:info] Connected to qp qp-11-for-2 with rights 15
+Got key qp-12-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:13700:5567118d82c0:280:7a190
+Deserialized QP info: qpn=79616, lid=0, rkey=500112
+Initiating rc with rights 15 About to connect
+Connected to qp qp-12-for-2 with rights 15
+[CE:info] Connected to qp qp-12-for-2 with rights 15
+Got key qp-13-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:1370d:55a3b3e5a2c0:280:7b8a7
+Deserialized QP info: qpn=79629, lid=0, rkey=506023
+Initiating rc with rights 15 About to connect
+Connected to qp qp-13-for-2 with rights 15
+[CE:info] Connected to qp qp-13-for-2 with rights 15
+Got key qp-14-for-2 with ret_val = 0:80fe:7b7932feff90fe7e:1371a:55998a2882c0:280:7a796
+Deserialized QP info: qpn=79642, lid=0, rkey=501654
+Initiating rc with rights 15 About to connect
+Connected to qp qp-14-for-2 with rights 15
+[CE:info] Connected to qp qp-14-for-2 with rights 15
+connectAll() successfull
+[CE:info] Unpublishing qp qp-2-for-1
+[CE:info] Unpublishing qp qp-2-for-3
+[CE:info] Unpublishing qp qp-2-for-4
+[CE:info] Unpublishing qp qp-2-for-5
+[CE:info] Unpublishing qp qp-2-for-6
+[CE:info] Unpublishing qp qp-2-for-7
+[CE:info] Unpublishing qp qp-2-for-8
+[CE:info] Unpublishing qp qp-2-for-9
+[CE:info] Unpublishing qp qp-2-for-10
+[CE:info] Unpublishing qp qp-2-for-11
+[CE:info] Unpublishing qp qp-2-for-12
+[CE:info] Unpublishing qp qp-2-for-13
+[CE:info] Unpublishing qp qp-2-for-14
+Selected port uses link layer: [Ethernet]
+GID retrieved: 33022:8897198609637899902
+Port LID: 0
+[CB:info] PD 'pd' registered
+[CB:info] Buffer 'buf' of size 24576 allocated
+[CB:info] Mr 'mr' under PD 'pd' registered with buf 'buf' (offset: 0, length: 24576) and rights 15
+[CB:info] Cq 'index-cq' registered
+[CE:info] Publishing qp default-race-qp-2-for-1
+[IndexClient:info] Connecting...
+Got key default-race-qp-1-for-2 with ret_val = 0:80fe:837532feff90fe7e:c55:7feafce2f040:1200000:1bcab
+Deserialized QP info: qpn=3157, lid=0, rkey=113835
+Initiating rc with rights 15 About to connect
+Connected to qp default-race-qp-1-for-2 with rights 15
+[CE:info] Connected to qp default-race-qp-1-for-2 with rights 15
+[IndexClient:info] Connected!
+[IndexClient:info] RDMA buffer: 94903573655872 to 94903573680448
+[CE:info] Unpublishing qp default-race-qp-2-for-1
+Querying YCSB for the set of initial key-pairs... Done.
+Inserting the initial key-pairs... 
+ Done.
+Querying YCSB for the list of operations... Done.
+Waiting for the initialization of other clients... Done.
+Running the benchmark... 
+Done. Results:
+
+################ Step-counts stats:
+######## UnreliableMaxRegFuture steps counts:
+TryReadAll: 980168
+NotifyAndReadTs: 2
+ReadLog: 352
+TryWriteAll: 20060
+WriteTsAndIn: 20060
+WriteTs: 1
+######## OopsDataFuture steps counts:
+WTryOptimisticTs: 20060
+RReading: 980168
+RTryNotifyWriter: 2
+ReplicateAsVerified: 979941
+WriteTsAsVerified: 20060
+
+################ Main stats:
+######## SEARCH stats:
+cache-hits: 100%
+Number of measurements: 1000000.
+Average latency: 641ns.
+0.1%: 60ns.
+1%: 70ns.
+2%: 70ns.
+3%: 70ns.
+4%: 70ns.
+5%: 75ns.
+6%: 75ns.
+7%: 80ns.
+8%: 85ns.
+9%: 85ns.
+10%: 90ns.
+11%: 90ns.
+12%: 95ns.
+13%: 95ns.
+14%: 95ns.
+15%: 100ns.
+16%: 105ns.
+17%: 115ns.
+18%: 130ns.
+19%: 140ns.
+20%: 145ns.
+21%: 150ns.
+22%: 160ns.
+23%: 165ns.
+24%: 170ns.
+25%: 175ns.
+26%: 190ns.
+27%: 200ns.
+28%: 210ns.
+29%: 215ns.
+30%: 220ns.
+31%: 225ns.
+32%: 230ns.
+33%: 240ns.
+34%: 250ns.
+35%: 265ns.
+36%: 275ns.
+37%: 280ns.
+38%: 285ns.
+39%: 290ns.
+40%: 295ns.
+41%: 300ns.
+42%: 305ns.
+43%: 310ns.
+44%: 315ns.
+45%: 320ns.
+46%: 320ns.
+47%: 325ns.
+48%: 330ns.
+49%: 335ns.
+50%: 340ns.
+51%: 345ns.
+52%: 350ns.
+53%: 355ns.
+54%: 360ns.
+55%: 360ns.
+56%: 365ns.
+57%: 365ns.
+58%: 370ns.
+59%: 370ns.
+60%: 375ns.
+61%: 375ns.
+62%: 380ns.
+63%: 380ns.
+64%: 380ns.
+65%: 385ns.
+66%: 385ns.
+67%: 390ns.
+68%: 390ns.
+69%: 395ns.
+70%: 395ns.
+71%: 400ns.
+72%: 405ns.
+73%: 405ns.
+74%: 410ns.
+75%: 415ns.
+76%: 420ns.
+77%: 430ns.
+78%: 435ns.
+79%: 440ns.
+80%: 450ns.
+81%: 455ns.
+82%: 460ns.
+83%: 465ns.
+84%: 470ns.
+85%: 475ns.
+86%: 480ns.
+87%: 490ns.
+88%: 495ns.
+89%: 505ns.
+90%: 520ns.
+91%: 540ns.
+92%: 555ns.
+93%: 575ns.
+94%: 595ns.
+95%: 625ns.
+96%: 655ns.
+97%: 690ns.
+98%: 730ns.
+99%: 790ns.
+99.9%: 1040ns.
+######## GET stats:
+Number of measurements: 979940.
+Average latency: 6304ns.
+0.1%: 2720ns.
+1%: 2750ns.
+2%: 2770ns.
+3%: 2780ns.
+4%: 2790ns.
+5%: 2800ns.
+6%: 2810ns.
+7%: 2820ns.
+8%: 2840ns.
+9%: 2850ns.
+10%: 2860ns.
+11%: 2870ns.
+12%: 2880ns.
+13%: 2890ns.
+14%: 2900ns.
+15%: 2910ns.
+16%: 2920ns.
+17%: 2930ns.
+18%: 2940ns.
+19%: 2960ns.
+20%: 2970ns.
+21%: 2980ns.
+22%: 2990ns.
+23%: 3000ns.
+24%: 3010ns.
+25%: 3020ns.
+26%: 3030ns.
+27%: 3040ns.
+28%: 3050ns.
+29%: 3060ns.
+30%: 3070ns.
+31%: 3080ns.
+32%: 3090ns.
+33%: 3100ns.
+34%: 3100ns.
+35%: 3110ns.
+36%: 3120ns.
+37%: 3120ns.
+38%: 3130ns.
+39%: 3140ns.
+40%: 3140ns.
+41%: 3150ns.
+42%: 3150ns.
+43%: 3160ns.
+44%: 3160ns.
+45%: 3170ns.
+46%: 3170ns.
+47%: 3180ns.
+48%: 3180ns.
+49%: 3180ns.
+50%: 3190ns.
+51%: 3190ns.
+52%: 3200ns.
+53%: 3200ns.
+54%: 3200ns.
+55%: 3210ns.
+56%: 3210ns.
+57%: 3210ns.
+58%: 3220ns.
+59%: 3220ns.
+60%: 3220ns.
+61%: 3230ns.
+62%: 3230ns.
+63%: 3240ns.
+64%: 3240ns.
+65%: 3240ns.
+66%: 3250ns.
+67%: 3250ns.
+68%: 3250ns.
+69%: 3260ns.
+70%: 3260ns.
+71%: 3270ns.
+72%: 3270ns.
+73%: 3280ns.
+74%: 3280ns.
+75%: 3290ns.
+76%: 3290ns.
+77%: 3300ns.
+78%: 3300ns.
+79%: 3310ns.
+80%: 3320ns.
+81%: 3320ns.
+82%: 3330ns.
+83%: 3340ns.
+84%: 3340ns.
+85%: 3350ns.
+86%: 3360ns.
+87%: 3370ns.
+88%: 3380ns.
+89%: 3390ns.
+90%: 3410ns.
+91%: 3420ns.
+92%: 3440ns.
+93%: 3460ns.
+94%: 3480ns.
+95%: 3510ns.
+96%: 3540ns.
+97%: 3570ns.
+98%: 3620ns.
+99%: 3710ns.
+99.9%: 11280ns.
+######## UPDATE stats:
+Number of measurements: 20060.
+Average latency: 7274ns.
+0.1%: 3130ns.
+1%: 3190ns.
+2%: 3220ns.
+3%: 3240ns.
+4%: 3260ns.
+5%: 3270ns.
+6%: 3280ns.
+7%: 3300ns.
+8%: 3310ns.
+9%: 3320ns.
+10%: 3330ns.
+11%: 3340ns.
+12%: 3350ns.
+13%: 3360ns.
+14%: 3370ns.
+15%: 3390ns.
+16%: 3400ns.
+17%: 3410ns.
+18%: 3430ns.
+19%: 3440ns.
+20%: 3450ns.
+21%: 3460ns.
+22%: 3480ns.
+23%: 3490ns.
+24%: 3500ns.
+25%: 3510ns.
+26%: 3520ns.
+27%: 3530ns.
+28%: 3540ns.
+29%: 3550ns.
+30%: 3550ns.
+31%: 3560ns.
+32%: 3570ns.
+33%: 3580ns.
+34%: 3580ns.
+35%: 3590ns.
+36%: 3600ns.
+37%: 3600ns.
+38%: 3610ns.
+39%: 3620ns.
+40%: 3620ns.
+41%: 3630ns.
+42%: 3630ns.
+43%: 3640ns.
+44%: 3640ns.
+45%: 3650ns.
+46%: 3660ns.
+47%: 3660ns.
+48%: 3670ns.
+49%: 3670ns.
+50%: 3680ns.
+51%: 3680ns.
+52%: 3690ns.
+53%: 3690ns.
+54%: 3700ns.
+55%: 3700ns.
+56%: 3710ns.
+57%: 3710ns.
+58%: 3720ns.
+59%: 3720ns.
+60%: 3730ns.
+61%: 3730ns.
+62%: 3740ns.
+63%: 3740ns.
+64%: 3750ns.
+65%: 3750ns.
+66%: 3760ns.
+67%: 3760ns.
+68%: 3770ns.
+69%: 3770ns.
+70%: 3780ns.
+71%: 3790ns.
+72%: 3790ns.
+73%: 3800ns.
+74%: 3810ns.
+75%: 3810ns.
+76%: 3820ns.
+77%: 3830ns.
+78%: 3830ns.
+79%: 3840ns.
+80%: 3850ns.
+81%: 3860ns.
+82%: 3860ns.
+83%: 3870ns.
+84%: 3880ns.
+85%: 3890ns.
+86%: 3910ns.
+87%: 3920ns.
+88%: 3930ns.
+89%: 3950ns.
+90%: 3960ns.
+91%: 3980ns.
+92%: 4000ns.
+93%: 4010ns.
+94%: 4040ns.
+95%: 4060ns.
+96%: 4100ns.
+97%: 4140ns.
+98%: 4210ns.
+99%: 4340ns.
+99.9%: 12460ns.
+
+Local tput: 148kpos
+###DONE###
