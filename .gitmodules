@@ -1,3 +1,4 @@
 [submodule "bin/swarm-kv"]
 	path = bin/swarm-kv
 	url = https://github.com/MuhammadAhmed552/swarm-kv
+	branch = main
